@@ -29,6 +29,7 @@
     "docker:logs": "docker-compose logs -f"
   },
   "dependencies": {
+    "@apollo/server": "^5.2.0",
     "@nestjs/apollo": "^13.2.1",
     "@nestjs/bull": "^10.0.1",
     "@nestjs/cache-manager": "^2.1.1",
