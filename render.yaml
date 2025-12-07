@@ -1,0 +1,34 @@
+services:
+  - type: web
+    name: a-to-z-backend
+    env: node
+    plan: free
+    buildCommand: npm install --legacy-peer-deps && npm run build
+    startCommand: node dist/main.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3001
+      - key: JWT_SECRET
+        scope: all
+      - key: DB_HOST
+        value: ep-small-queen-aelc6166-pooler.c-2.us-east-2.aws.neon.tech
+      - key: DB_PORT
+        value: 5432
+      - key: DB_USER
+        value: neondb_owner
+      - key: DB_PASSWORD
+        scope: all
+      - key: DB_NAME
+        value: Aneesa
+      - key: DB_SSL
+        value: true
+      - key: REDIS_HOST
+        scope: all
+      - key: REDIS_PORT
+        value: 6379
+      - key: REDIS_PASSWORD
+        scope: all
+      - key: CORS_ORIGIN
+        value: https://waqas-a-to-z-service-malakand.netlify.app
