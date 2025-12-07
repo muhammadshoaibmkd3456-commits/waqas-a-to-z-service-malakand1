@@ -43,3 +43,8 @@ Thumbs.db
 .cache/
 .parcel-cache/
 dist/
+
+# Vercel
+.vercel/
+.vercel
+out/
